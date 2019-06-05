@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
 export const Form = props => {
+  
   const {
     values: { name, email, password, confirmPassword },
     errors,

@@ -4,6 +4,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import { Form } from "./form";
 import Paper from "@material-ui/core/Paper";
 import * as Yup from "yup"
+import  FlavorForm  from "./FlavorForm";
 
 const styles = theme => ({
  paper: {
@@ -48,10 +49,15 @@ class InputForm extends Component {
            <h1>Form</h1>
            <Formik
              render={props => <Form {...props} />}
+             
            initialValues={values}
             validationSchema={validationSchema}
            />
+           
          </Paper>
+       </div>
+       <div className= {classes.container}>
+         <FlavorForm />
        </div>
      </React.Fragment>
    );
